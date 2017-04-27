@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1493231039 source:c:\users\miguel.a.tadakuma\desktop\curso programacion utn\tp_2_cascara\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1493226763 c:\users\miguel.a.tadakuma\desktop\curso programacion utn\tp_2_cascara\tp_2_cascara\funciones.h
+
+1493226763 source:c:\users\miguel.a.tadakuma\desktop\curso programacion utn\tp_2_cascara\tp_2_cascara\funciones.c
+	<string.h>
+	"funciones.h"
+
+1493261746 source:c:\users\miguel.a.tadakuma\desktop\curso programacion utn\tp_2_cascara_miguel\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1493260840 c:\users\miguel.a.tadakuma\desktop\curso programacion utn\tp_2_cascara_miguel\tp_2_cascara\funciones.h
+
+1493261987 source:c:\users\miguel.a.tadakuma\desktop\curso programacion utn\tp_2_cascara_miguel\tp_2_cascara\funciones.c
+	<string.h>
+	"funciones.h"
+
