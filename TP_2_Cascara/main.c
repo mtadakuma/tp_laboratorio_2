@@ -8,7 +8,8 @@
 int main()
 {
     char seguir='s';
-    int opcion=0;
+    int opcion=0; //Variable donde se pasa el string de entrada
+    char auxOpcionStr[50]; //String de entrada para la opcion
 
     Persona misPersonas[CANT]; //Estructuras de la cantidad definida
     Persona auxiliarPersona;  //Auxiliar para ordenamiento
@@ -40,7 +41,16 @@ int main()
         printf("4- Imprimir grafico de edades\n");
         printf("5- Salir\n");
 
-        scanf("%d",&opcion);
+        pedirString("Ingrese Opcion: ", auxOpcionStr);
+
+        if (validarSoloNumeros(auxOpcionStr)==0)
+        {
+            printf("Opcion invalida\n");
+        }
+        else
+        {
+            opcion = atoi(auxOpcionStr); //No necesito validar que sea menor que 0 o mayor a 5 porque ya lo hace el switch con el default
+        }
 
         switch(opcion)
         {
@@ -239,12 +249,12 @@ int main()
                 printf(" >35\n");
                 break;
             case 5:
-                printf("Creado por Miguel Angel Tadakuma - 2017\n");
+                printf("\nCreado por Miguel Angel Tadakuma - 2017\n");
                 printf("\nGracias por utilizar este programa.\n");
                 seguir = 'n';
                 break;
             default:
-                printf("Opcion incorrecta, ingrese opcion entre 1 y 5.");
+                printf("Ingrese opcion entre 1 y 5.\n");
                 break;
         }
     system("pause");
